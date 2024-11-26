@@ -1,0 +1,36 @@
+.btn-pink {
+  background-color: #f45170;
+  color: white;
+
+}.active {
+  font-weight: bold;
+  color: #ff007f;
+}
+
+
+
+.btn-white-pink {
+  background-color: white; /* White background */
+  color: #f45170; /* Rose text */
+  border: 2px solid #f45170; /* Optional: Add a border with the same rose color */
+}
+
+.btn-white-pink:hover {
+  background-color: #f45170; /* Change background to rose on hover */
+  color: white; /* Change text to white on hover */
+}
+
+/* Couleur de l'élément navbar qui change */
+.nav-link.active {
+  background-color: #f45170; /* Couleur de fond lorsque l'élément est actif */
+  color: white; /* Couleur de texte lorsque l'élément est actif */
+}
+
+.text-pink {
+  color: #f45170; /* Pink color */
+}
+
+.form-control:focus {
+  border-color: #f45170; /* Change border to pink */
+  box-shadow: 0 0 0 0.2rem rgba(244, 81, 112, 0.25); /* Soft pink shadow */
+}

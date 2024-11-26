@@ -1,0 +1,193 @@
+
+<div class="dashboard container">
+  <div class="welcome-section">
+    <div class="profile-picture">
+      <img src="/assets/utilisateur.png" alt="Zana Suleiman">
+    </div>
+    <div class="welcome-info">
+      <h1>Bienvenue sur votre tableau de bord CheckMate !</h1>
+      <br>
+      <p> Ines Mazgar </p>
+      <p>Développeur</p>
+      <p>80 Projects</p>
+      <p>Membre depuis 23 Septembre 2024</p>
+      <br>
+      <button class="btn btn-pink btn-light" routerLink="/settings-user">Configurer votre profile</button>
+    </div>
+  </div>
+
+  <div class="project-section">
+    <h4>Gérer les projets et les tâches :</h4>
+    <p>Choisissez un projet existant ou créez-en un nouveau pour gérer vos tâches.</p>
+
+    <!-- Section de sélection de projet -->
+    <div class="project-selection">
+      <h5>Projets existants :</h5>
+      <select id="project-select">
+        <option value="">-- Sélectionnez un projet --</option>
+        <!-- Ajoutez les options de projet ici -->
+      </select>
+      <br><br>
+      <button type="button" class="btn btn-pink btn-sm" data-toggle="modal" data-target="#newProjectModal">Nouveau projet</button>
+    </div>
+
+    <!-- Liste des tâches pour le projet sélectionné -->
+    <div class="task-section">
+      <h5>Tâches associées :</h5>
+      <ul class="todo-list" id="taskList">
+        <!-- Liste dynamique des tâches -->
+      </ul>
+
+      <!-- Formulaire d'ajout de tâche -->
+      <div class="task-form">
+        <input type="text" id="new-task-title" placeholder="Ajouter une tâche">
+        <input type="date" id="new-task-deadline">
+        <button type="button" class="btn btn-pink" id="add-task-btn">Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <h4>La liste des tâches à faire :</h4>
+        <div class="todo-list">
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox"><i class="bg-primary"></i><span>Faire une application Angular</span>
+                <a href='#' class="ti-close"></a>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" checked><i class="bg-success"></i><span>Créer une présentation de la matière gestion des technologies</span>
+                <a href='#' class="ti-close"></a>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" checked><i class="bg-warning"></i><span>Abonner les responsables RH à travers Linkedin</span>
+                <a href='#' class="ti-close"></a>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" checked><i class="bg-danger"></i><span>Faire le design d'un thème avec Figma</span>
+                <a href='#' class="ti-close"></a>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" checked><i class="bg-success"></i><span>Créer un rapport de PFA</span>
+                <a href='#' class="ti-close"></a>
+              </label>
+            </li>
+          </ul>
+          <input type="text" class="tdl-new form-control" placeholder="Taper ici..">
+        </div>
+      </div>
+
+      <div class="card">
+        <h4>Prochainement !! A faire :</h4>
+        <div class="todo-list">
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox"><i class="bg-primary"></i><span>Finaliser le prototype UI</span>
+                <a href='#' class="ti-close"></a>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox"><i class="bg-success"></i><span>Organiser une réunion d'équipe</span>
+                <a href='#' class="ti-close"></a>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox"><i class="bg-warning"></i><span>Compléter la documentation technique</span>
+                <a href='#' class="ti-close"></a>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox"><i class="bg-danger"></i><span>Préparer la présentation pour le client</span>
+                <a href='#' class="ti-close"></a>
+              </label>
+            </li>
+          </ul>
+          <input type="text" class="tdl-new form-control" placeholder="Taper ici..">
+        </div>
+      </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <h4>En collaboration :</h4>
+        <div class="todo-list">
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox"><i class="bg-primary"></i><span>Mettre à jour le site web</span>
+                <a href='#' class="ti-close"></a>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox"><i class="bg-success"></i><span>Développer une nouvelle fonctionnalité</span>
+                <a href='#' class="ti-close"></a>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox"><i class="bg-warning"></i><span>Optimiser les performances du système</span>
+                <a href='#' class="ti-close"></a>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox"><i class="bg-danger"></i><span>Résoudre les problèmes de sécurité</span>
+                <a href='#' class="ti-close"></a>
+              </label>
+            </li>
+          </ul>
+          <input type="text" class="tdl-new form-control" placeholder="Taper ici..">
+        </div>
+      </div>
+
+      <div class="card">
+        <h4>Progression des projets :</h4>
+        <div class="todo-list">
+          <p class="f-w-600">iMacs <span class="pull-right">85%</span></p>
+          <div class="progress">
+            <div role="progressbar" style="width: 85%; height:8px;" class="progress-bar bg-danger"></div>
+          </div>
+
+          <p class="m-t-10 f-w-600">iBooks<span class="pull-right">90%</span></p>
+          <div class="progress">
+            <div role="progressbar" style="width: 90%; height:8px;" class="progress-bar bg-info"></div>
+          </div>
+
+          <p class="m-t-10 f-w-600">iPhone<span class="pull-right">65%</span></p>
+          <div class="progress">
+            <div role="progressbar" style="width: 65%; height:8px;" class="progress-bar bg-success"></div>
+          </div>
+
+          <p class="m-t-10 f-w-600">Samsung<span class="pull-right">65%</span></p>
+          <div class="progress">
+            <div role="progressbar" style="width: 65%; height:8px;" class="progress-bar bg-warning"></div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</div>
+
+

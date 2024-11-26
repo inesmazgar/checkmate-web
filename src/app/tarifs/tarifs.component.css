@@ -1,0 +1,124 @@
+.btn-pink {
+  background-color: #f45170;
+  color: white;
+size-adjust :unset ; }
+
+
+.pink-underline {
+display: inline-block; /* Required for the underline to appear below the text */
+position: relative; /* For positioning the pseudo-element */
+}
+
+.pink-underline::after {
+content: ""; /* Creates a pseudo-element */
+display: block; /* Required to apply width */
+width: 100%; /* Full width of the text */
+height: 4px; /* Height of the underline */
+background-color: #f45170; /* Pink color */
+position: absolute; /* Positions the underline */
+left: 0; /* Aligns to the left */
+bottom: -5px; /* Adjusts the vertical position of the underline */
+}
+
+/* Add a bounce animation for the title */
+/* The @keyframes bounce creates a bouncing
+effect for the title, making it more dynamic and eye-catching. */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-20px);
+  }
+  60% {
+      transform: translateY(-15px);
+  }
+}
+
+.giant-title {
+  font-size: 8rem; /* Adjust size as needed */
+  animation: bounce 2s ease infinite; /* Apply animation */
+}
+
+.giant-subtitle {
+  font-size: 4rem; /* Ensure it's very large */
+}
+
+/* Custom styles for carousel cards */
+.carousel-item .card {
+height: 300px; /* Fix card height */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.carousel-item img {
+height: 180px; /* Fix image height */
+width: 100%; /* Ensure image fills card width */
+object-fit: cover; /* Crop images to fill container */
+}
+
+.card-body {
+flex-grow: 1; /* Make card body adjust to card height */
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+background-color: #f45170 ; /* Semi-transparent black for better visibility */
+width: 3rem;
+height: 3rem;
+border-radius: 50%; /* Rounded background for icons */
+}
+
+
+ul {
+  list-style: disc; /* Type de puces */
+  padding-left: 20px; /* Espace à gauche */
+}
+li {
+  color: black; /* Couleur du texte */
+}
+li::marker {
+  color: #f45170; /* Couleur des puces (rose) */
+}
+
+.card {
+  margin: 20px; /* Espace entre les cartes */
+  border: 1px solid #797979; /* Bordure de couleur rose */
+  border-radius: 5px; /* Coins arrondis */
+  height: 100%; /* Assure que toutes les cartes ont la même hauteur */
+  display: flex;
+  flex-direction: column; /* Flex pour faire tenir le contenu correctement */
+}
+.card-body {
+  flex: 1; /* Permet au contenu de la carte de s'étendre */
+  display: flex;
+  flex-direction: column; /* Colonne pour empiler le contenu verticalement */
+  justify-content: space-between; /* Espace entre les éléments */
+}
+.card img {
+  height: 150px; /* Hauteur uniforme pour les images */
+  object-fit: cover; /* Ajuste l'image sans déformer */
+  border-top-left-radius: 5px; /* Coins arrondis pour l'image */
+  border-top-right-radius: 5px; /* Coins arrondis pour l'image */
+}
+.card-title {
+  color: #000000; /* Couleur du titre */
+}
+.card-text {
+  color: #555; /* Couleur du texte */
+}
+.price {
+  font-size: 1.5rem; /* Taille du prix */
+  color: #f45170; /* Couleur du prix */
+  font-weight: bold; /* Gras pour le prix */ }
+
+
+  .form-control:focus {
+    border-color: #f45170; /* Change border to pink */
+    box-shadow: 0 0 0 0.2rem rgba(244, 81, 112, 0.25); /* Soft pink shadow */
+  }

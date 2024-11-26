@@ -1,0 +1,289 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<button
+  *ngIf="showBackToTopButton"
+  class="btn btn-pink"
+  (click)="scrollToTop()"
+  style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; border-radius: 100% ;"
+>
+↑
+</button>
+<div class="container my-5">
+  <div id="Accueil" class="container my-5">
+
+  <!-- Title and Objective -->
+   <br><br>
+   <br><br>
+
+  <h1 class="text-center fw-bold giant-title">
+    <img src="/assets/work-from-home.png" alt="productivity" width="100" height="100" class="mx-2">
+    CheckMate
+    <img src="/assets/work-from-home.png" alt="productivity" width="100" height="100" class="mx-2">
+  </h1>
+  <p class="fs-1 text-center giant-subtitle">Votre application ultime pour organiser vos tâches et gérer efficacement votre emploi du temps.</p>
+
+  <!-- Rating and Icons -->
+  <div class="text-center my-4">
+
+      <img class="stars" src="/assets/etoile.png" alt="rate" width="30" height="30">
+      <img class="stars" src="/assets/etoile.png" alt="rate" width="30" height="30" >
+      <img class="stars" src="/assets/etoile.png" alt="rate" width="30" height="30" >
+      <img class="stars" src="/assets/etoile.png" alt="rate" width="30" height="30" >
+
+    <p class="my-2">4.2/5 sur 1000 avis</p>
+    <div>
+      <a href="#"><img src="/assets/apple.png" alt="Apple Store" width="30" height="30" class="mx-2"></a>
+      <a href="#"><img src="/assets/android.png" alt="Google Play" width="30" height="30" class="mx-2"></a>
+    </div>
+
+<br> <br>
+<br> <br>
+
+<h1 class="text-center fw-bold giant-title">
+    <img src="/assets/objectifs.png" alt="productivity" width="100" height="100" class="mx-2">
+    CheckMate
+    <img src="/assets/objectifs.png" alt="productivity" width="100" height="100" class="mx-2">
+  </h1>
+  <p class="fs-1 text-center giant-subtitle">Simplifiez votre vie et celle de votre équipe avec l'application de task manager et de to do list la plus utilisée au monde. <br> Rejoignez plus de : </p>
+
+  <!-- Rating and Icons -->
+  <div class="text-center my-4">
+
+      <img class="ado" src="/assets/ado1.png" alt="rate" width="60" height="60">
+      <img class="ado" src="/assets/ado2.png" alt="rate" width="60" height="60" >
+      <img class="ado" src="/assets/ado3.png" alt="rate" width="60" height="60" >
+
+    <p class="my-2">40 000 000 d'individus, de familles et d'équipes très efficaces.</p>
+    <div>
+
+
+  <!-- Call to Action Button -->
+  <div class="text-center my-4">
+    <a href="#" class="btn btn-pink btn-lg">Commencez gratuitement</a>
+  </div>
+  <div class="text-center mt-4">
+    <p class="fw-bold">Rejoignez la communauté CheckMate dès aujourd'hui et commencez à réaliser vos objectifs plus efficacement !</p>
+  </div>
+<br>
+</div>
+<div id="Fonctionnalités" class="container my-5">
+  <h2 class="text-muted text-center">
+    Que vous soyez étudiant, professionnel ou simplement quelqu'un qui souhaite mieux gérer son temps.
+  </h2>
+
+  <div class="row mt-5">
+    <div class="col-md-12">
+      <h2 class="fw-bold text-center">Fonctionnalités</h2>
+      <p class="text-center">CheckMate offre une gamme complète de fonctionnalités pour vous aider à rester organisé et productif. Voici ce que vous pouvez attendre de notre application :</p>
+    </div>
+
+  </div>
+
+<!-- Task Lists Feature -->
+<div class="row mt-4 align-items-center">
+  <div class="col-md-6 mb-4 d-flex flex-column justify-content-center">
+    <div class="text-black">
+      <h5 class="card-title fw-bold display-5">Créer des listes de tâches personnalisées : </h5> <!-- Titre en gras -->
+      <br> <br> <p class="card-text text-muted fs-5">Organisez vos projets en créant des listes adaptées à vos besoins spécifiques. Que ce soit pour vos cours, vos projets personnels ou professionnels, vous avez le contrôle total.</p> <!-- Agrandir la description -->
+    </div>
+  </div>
+  <div class="col-md-6 mb-4">
+    <img src="/assets/1.png" alt="Listes de Tâches" class="img-fluid" />
+  </div>
+</div>
+
+
+<!-- Reminders Feature -->
+<div class="row mt-4 align-items-center">
+  <div class="col-md-6 mb-4 d-flex flex-column justify-content-center">
+    <div class="text-black">
+      <h5 class="card-title fw-bold display-5">Définir des rappels : </h5>
+      <br> <br>   <p class="card-text text-muted fs-5">Ne manquez plus jamais une échéance ! Programmez des notifications pour vos tâches importantes et restez informé des dates limites à venir.</p>
+    </div>
+  </div>
+  <div class="col-md-6 mb-4">
+    <img src="/assets/2.png" alt="Rappels" class="img-fluid" />
+  </div>
+</div>
+
+<!-- Course Organization Feature -->
+<div class="row mt-4 align-items-center">
+  <div class="col-md-6 mb-4 d-flex flex-column justify-content-center">
+    <div class="text-black">
+      <h5 class="card-title fw-bold display-5">Organiser vos cours : </h5>
+      <br> <br>   <p class="card-text text-muted fs-5">Que ce soit pour vos études ou votre travail, classifiez et hiérarchisez vos cours pour une gestion plus fluide.</p>
+    </div>
+  </div>
+  <div class="col-md-6 mb-4">
+    <img src="/assets/3.png" alt="Organisation des Cours" class="img-fluid" />
+  </div>
+</div>
+
+<!-- Progress Tracking Feature -->
+<div class="row mt-4 align-items-center">
+  <div class="col-md-6 mb-4 d-flex flex-column justify-content-center">
+    <div class="text-black">
+      <h5 class="card-title fw-bold display-5">Suivre votre progression : </h5>
+      <br> <br>  <p class="card-text text-muted fs-5">Visualisez vos réalisations et ajustez vos efforts en fonction de vos performances. Notre application vous permet de voir combien de tâches vous avez accomplies et celles qui restent à faire.</p>
+    </div>
+  </div>
+  <div class="col-md-6 mb-4">
+    <img src="/assets/4.png" alt="Suivi de Progression" class="img-fluid" />
+  </div>
+</div>
+
+<!-- User Interface Feature -->
+<div class="row mt-4 align-items-center">
+  <div class="col-md-6 mb-4 d-flex flex-column justify-content-center">
+    <div class="text-black">
+      <h5 class="card-title fw-bold display-5">Interface utilisateur intuitive : </h5>
+      <br> <br> <p class="card-text text-muted fs-5">Naviguez facilement grâce à un design clair et intuitif. CheckMate a été conçu pour être accessible à tous, quel que soit votre niveau de compétence technique.</p>
+    </div>
+  </div>
+  <div class="col-md-6 mb-4">
+    <img src="/assets/5.png" alt="Interface Utilisateur" class="img-fluid" />
+  </div>
+</div>
+
+<!-- Additional Features -->
+<!-- Collaboration Feature -->
+<div class="row mt-4 align-items-center">
+  <div class="col-md-6 mb-4 d-flex flex-column justify-content-center">
+    <div class="text-black">
+      <h5 class="card-title fw-bold display-5">Collaboration en temps réel :</h5>
+      <br> <br> <p class="card-text text-muted fs-5">Travaillez avec d'autres utilisateurs pour atteindre vos objectifs. Partagez des listes de tâches et collaborez sur des projets en temps réel.</p>
+    </div>
+  </div>
+  <div class="col-md-6 mb-4">
+    <img src="/assets/6.png" alt="Collaboration" class="img-fluid" />
+  </div>
+</div>
+
+<!-- Customization Feature -->
+<div class="row mt-4 align-items-center">
+  <div class="col-md-6 mb-4 d-flex flex-column justify-content-center">
+    <div class="text-black">
+      <h5 class="card-title fw-bold display-5">Personnalisation avancée :</h5>
+      <br> <br>  <p class="card-text text-muted fs-5">Adaptez l'application à vos besoins. Modifiez les thèmes, les notifications et d'autres paramètres pour une expérience sur mesure.</p>
+    </div>
+  </div>
+  <div class="col-md-6 mb-4">
+    <img src="/assets/7.png" alt="Personnalisation" class="img-fluid" />
+  </div>
+</div>
+<div>
+  <p class="fs-5">Découvrez comment CheckMate peut transformer votre façon de travailler et vous aider à rester organisé, à tout moment et en tout lieu. Nous sommes là pour vous soutenir dans votre parcours vers une meilleure gestion du temps.</p>
+
+</div>
+
+<div class="container my-5">
+  <h2 class="card-title fw-bold display-5">Que souhaitez-vous gérer ?</h2>
+<br><br>
+  <div id="manageCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="/assets/rh.jpg" class="card-img-top img-fluid" alt="RH">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">RH</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="/assets/design.jpg" class="card-img-top img-fluid" alt="Création et Design">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Création et Design</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="/assets/si.jpeg" class="card-img-top img-fluid" alt="SI et Support">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">SI et Support</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="/assets/marketing.jpg" class="card-img-top img-fluid" alt="Marketing">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Marketing</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="/assets/finance.jpg" class="card-img-top img-fluid" alt="Finance">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Finance</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="/assets/projets.jpg" class="card-img-top img-fluid" alt="Gestion de Projets">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Gestion de Projets</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="/assets/ventes.jpg" class="card-img-top img-fluid" alt="Ventes">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Ventes</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="/assets/clients.jpg" class="card-img-top img-fluid" alt="Clients">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Clients</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="/assets/logistiques.jpg" class="card-img-top img-fluid" alt="Production">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Production</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#manageCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#manageCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</div>

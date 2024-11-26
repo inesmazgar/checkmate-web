@@ -1,0 +1,70 @@
+<div id="#SignUp">
+
+<br><br>
+
+<h1 class="text-center fw-bold giant-title">
+  <img src="/assets/work-from-home.png" alt="productivité" width="100" height="100" class="mx-2">
+  CheckMate
+  <img src="/assets/work-from-home.png" alt="productivité" width="100" height="100" class="mx-2">
+</h1>
+<br><br>
+
+<div class="row justify-content-center">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">
+        <h2>S'inscrire :</h2>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="signUpForm" (ngSubmit)="onSignUp()">
+          <div class="form-group mb-3">
+            <label for="username">Nom d'utilisateur :</label>
+            <input
+              type="text"
+              id="username"
+              formControlName="username"
+              class="form-control"
+              placeholder="Entrez votre nom d'utilisateur ici.."
+            />
+            <div *ngIf="signUpForm.get('username')?.invalid && signUpForm.get('username')?.touched" class="text-danger">
+              Le nom d'utilisateur est requis.
+            </div>
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="email">Email :</label>
+            <input
+              type="email"
+              id="email"
+              formControlName="email"
+              class="form-control"
+              placeholder="Entrez votre email ici.."
+            />
+            <div *ngIf="signUpForm.get('email')?.invalid && signUpForm.get('email')?.touched" class="text-danger">
+              Veuillez entrer un email valide.
+            </div>
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="password">Mot de passe :</label>
+            <input
+              type="password"
+              id="password"
+              formControlName="password"
+              class="form-control"
+              placeholder="Entrez votre mot de passe ici.."
+            />
+            <div *ngIf="signUpForm.get('password')?.invalid && signUpForm.get('password')?.touched" class="text-danger">
+              Le mot de passe doit contenir au moins 6 caractères.
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: center;">
+            <button type="submit" class="btn btn-pink">S'inscrire</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

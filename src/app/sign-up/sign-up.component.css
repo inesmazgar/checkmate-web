@@ -1,0 +1,35 @@
+
+.btn-pink {
+  background-color: #f45170;
+  color: white;
+}
+
+
+.pink-underline {
+display: inline-block; /* Required for the underline to appear below the text */
+position: relative; /* For positioning the pseudo-element */
+}
+
+.pink-underline::after {
+content: ""; /* Creates a pseudo-element */
+display: block; /* Required to apply width */
+width: 100%; /* Full width of the text */
+height: 4px; /* Height of the underline */
+background-color: #f45170; /* Pink color */
+position: absolute; /* Positions the underline */
+left: 0; /* Aligns to the left */
+bottom: -5px; /* Adjusts the vertical position of the underline */
+}
+.giant-title {
+  font-size: 8rem; /* Adjust size as needed */
+  animation: bounce 2s ease infinite; /* Apply animation */
+}
+
+.giant-subtitle {
+  font-size: 4rem; /* Ensure it's very large */
+}
+
+.form-control:focus {
+  border-color: #f45170; /* Change border to pink */
+  box-shadow: 0 0 0 0.2rem rgba(244, 81, 112, 0.25); /* Soft pink shadow */
+}
